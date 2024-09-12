@@ -79,37 +79,35 @@ html,body {
 }
 
 #slider-container {
-    position: absolute;    /* 绝对定位 */
-    left: 10%;           /* 距离右边界10px */
-    top: 10%;              /* 在页面的垂直中心 */
-    width: 80%;            /* 滑动条宽度 */
-    height: 3%;         /* 滑动条高度 */
+    position: absolute;   
+    left: 10%;         
+    top: 10%;             
+    width: 80%;        
+    height: 3%;    
     /* transform: translateY(-50%); /* 垂直居中对齐 */
 }
 
 #university-select {
-    position: absolute;    /* 绝对定位 */
-    left: 10%;           /* 距离右边界10px */
-    top: 16%;              /* 在页面的垂直中心 */
-    width: 80%;            /* 滑动条宽度 */
-    height: 3%;         /* 滑动条高度 */
-    /* transform: translateY(-50%); /* 垂直居中对齐 */
+    position: absolute;   
+    left: 10%;        
+    top: 16%;       
+    width: 80%;       
+    height: 3%;
 }
 
 #controls {
-    position: absolute;    /* 绝对定位 */
-    left: 0%;           /* 距离右边界10px */
-    top: 0%;              /* 在页面的垂直中心 */
-    width: 100%;            /* 滑动条宽度 */
-    height: 5%;         /* 滑动条高度 */
-    /* transform: translateY(-50%); /* 垂直居中对齐 */
+    position: absolute; 
+    left: 0%;           
+    top: 0%;            
+    width: 100%;          
+    height: 5%;
 }
 
-#back-container {
+#language-container {
     position: absolute;
-    left: 0%; 
+    left: 90%; 
     top: 0%; 
-    width: 5%; 
+    width: 10%; 
     height: 5%;  
     z-index: 100;
 }

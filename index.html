@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Data Visualization 2023 Fall</title>
+    <title>Erjie Wu</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/d3.v6.min.js"></script>
 
@@ -10,35 +10,25 @@
 </head>
 
 <body>
-    <div id="back-container">
-        <a href="../index.html">返回主界面</a>
+    <div id="language-container">
+        <!-- <a href="../index.html">返回主界面</a> -->
+        <button id='Language'>Switch to English</button>
     </div>
     
     <div id='controls'>
-        <button id='btn1'>得分排名堆叠图</button>
-        <button id='btn2'>各国得分排名图</button>
-        <button id='btn3'>Top 200大学数量的国家分布</button>
-        <button id='btn4'>Top 200大学的时间变化</button>
-        <button id='btn5'>两校信息对比图</button>
-    </div>
-
-    <div id='slider-container'>
-        <input type="range" id="yearSlider" min="2011" max="2023" value="2023" step="1" orient="vertical">
-        <div id="slider-labels">
-        </div>
-    </div>
-
-    <div id='university-select' style='display: none;'>
-        <select id="university1-select"></select>
-        <select id="university2-select"></select>
+        <button id='AboutMe'>关于我</button>
+        <button id='Research'>研究</button>
+        <button id='Publications'>论文</button>
+        <button id='Activities'>学术活动</button>
+        <button id='Personal'>兴趣空间</button>
     </div>
 
     <div id='container'>
-        <div id='figure1'></div>
-        <div id='figure2' style='display: none;'></div>
-        <div id='figure3' style='display: none;'></div>
-        <div id='figure4' style='display: none;'></div>
-        <div id='figure5' style='display: none;'></div>
+        <div id='page1' style='display: block;'>页面1</div>
+        <div id='page2' style='display: none;'>页面2</div>
+        <div id='page3' style='display: none;'>页面3</div>
+        <div id='page4' style='display: none;'>页面4</div>
+        <div id='page5' style='display: none;'>页面5</div>
 
         <div id='tooltip'></div>
         <svg></svg>
@@ -46,6 +36,22 @@
 
     <div id="tooltip" style="position: absolute; visibility: hidden; background-color: white; padding: 10px; border: 1px solid #000;"></div>
 
+        <!-- <div id='slider-container'>
+        <input type="range" id="yearSlider" min="2011" max="2023" value="2023" step="1" orient="vertical">
+        <div id="slider-labels">Slider</div>
+    </div> 滑动条-->
+
+    <!-- <div id='university-select' style='display: none;'>
+        <select id="university1-select"></select>
+        <select id="university2-select"></select>
+    </div> 下拉选择框-->
+
+    <script src="js/control.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/page1.js"></script>
+    <script src="js/page2.js"></script>
+    <script src="js/page3.js"></script>
+    <script src="js/page4.js"></script>
+    <script src="js/page5.js"></script>
     <script src="js/main.js"></script>
 </body>
