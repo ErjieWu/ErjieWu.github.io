@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Khand-Regular';
+    src: url('./font/Khand-Regular.ttf');
+}
+@font-face {
+    font-family: 'KAITI';
+    src: url(./font/KAITI.ttf);
+}
+@font-face {
+    font-family: 'PingFangSC-Regular';
+    src: url(./font/PingFang-SC-Regular.ttf);
+}
+
+@media only screen and (min-width: 1080px) {
+    html {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 25px !important;
+    }
+}
+
+
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%; 
+    height: 100%;  
+    background-color: rgba(240, 240, 240, 0.9);
+    overflow: hidden;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-anchor: middle;
+}
+
+.axis_label {
+    font-size: 1rem;
+    text-anchor: middle;
+}
+
+.point {
+    fill: #1f77b4;
+}
+
+#tooltip{
+    position: absolute;           
+    text-align: center;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgb(200,200,200);
+    border-radius:5px;
+    font-size:0.8rem;
+    width: 15rem;;
+    padding:4px;
+    color:black;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0.8;
+}
+
+.domain {
+    stroke: rgb(80,80,80);
+    stroke-linecap: round;
+}
+
+.tick line {
+    stroke: rgb(80,80,80);
+    stroke-linecap: round;
+}
+
+#slider-container {
+    position: absolute;    /* 绝对定位 */
+    left: 10%;           /* 距离右边界10px */
+    top: 10%;              /* 在页面的垂直中心 */
+    width: 80%;            /* 滑动条宽度 */
+    height: 3%;         /* 滑动条高度 */
+    /* transform: translateY(-50%); /* 垂直居中对齐 */
+}
+
+#university-select {
+    position: absolute;    /* 绝对定位 */
+    left: 10%;           /* 距离右边界10px */
+    top: 16%;              /* 在页面的垂直中心 */
+    width: 80%;            /* 滑动条宽度 */
+    height: 3%;         /* 滑动条高度 */
+    /* transform: translateY(-50%); /* 垂直居中对齐 */
+}
+
+#controls {
+    position: absolute;    /* 绝对定位 */
+    left: 0%;           /* 距离右边界10px */
+    top: 0%;              /* 在页面的垂直中心 */
+    width: 100%;            /* 滑动条宽度 */
+    height: 5%;         /* 滑动条高度 */
+    /* transform: translateY(-50%); /* 垂直居中对齐 */
+}
+
+#back-container {
+    position: absolute;
+    left: 0%; 
+    top: 0%; 
+    width: 5%; 
+    height: 5%;  
+    z-index: 100;
+}

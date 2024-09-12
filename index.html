@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Visualization 2023 Fall</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.v6.min.js"></script>
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="back-container">
+        <a href="../index.html">返回主界面</a>
+    </div>
+    
+    <div id='controls'>
+        <button id='btn1'>得分排名堆叠图</button>
+        <button id='btn2'>各国得分排名图</button>
+        <button id='btn3'>Top 200大学数量的国家分布</button>
+        <button id='btn4'>Top 200大学的时间变化</button>
+        <button id='btn5'>两校信息对比图</button>
+    </div>
+
+    <div id='slider-container'>
+        <input type="range" id="yearSlider" min="2011" max="2023" value="2023" step="1" orient="vertical">
+        <div id="slider-labels">
+        </div>
+    </div>
+
+    <div id='university-select' style='display: none;'>
+        <select id="university1-select"></select>
+        <select id="university2-select"></select>
+    </div>
+
+    <div id='container'>
+        <div id='figure1'></div>
+        <div id='figure2' style='display: none;'></div>
+        <div id='figure3' style='display: none;'></div>
+        <div id='figure4' style='display: none;'></div>
+        <div id='figure5' style='display: none;'></div>
+
+        <div id='tooltip'></div>
+        <svg></svg>
+    </div>
+
+    <div id="tooltip" style="position: absolute; visibility: hidden; background-color: white; padding: 10px; border: 1px solid #000;"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
